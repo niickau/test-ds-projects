@@ -1,17 +1,11 @@
-import torch.nn.functional as F
-
 from torch import nn
-
-
-def conv3x3(in_, out):
-  return nn.Conv2d(in_, out, kernel_size=3, padding=1)
 
 
 class ConvRelu(nn.Module):
 
   def __init__(self, in_, out):
     super().__init__()
-    self.conv = conv3x3(in_, out)
+    self.conv = nn.Conv2d(in_, out, kernel_size=3, padding=1)
     self.relu = nn.ReLU(inplace=True)
 
   def forward(self, x):
