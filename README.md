@@ -1,4 +1,4 @@
-# Data-Science-Projects
+# test-ds-projects
 In this repository some of my train-projects:
 
 - **Churn_Prediction** (the final project of Coursera Specialization - the problem of binary classification, whether the client is prone to churn or not)
